@@ -23,5 +23,16 @@ int main() {
     double nex = 30.86;
 
     printf("%.1f\n", myFloat);
-    printf("%.2f", nex);
+    printf("%.2f\n", nex); //to 2 decimal places.
+
+/* Type Conversion - coversion of int value to float value.
+   Implicit conversion - automatically by compiler
+   Explicit conversion - manually
+*/
+
+int num1 = 5; 
+int num2 =4;
+float sum = (float) num1 / num2;
+
+printf("%.1f", sum); // explicit conversion (recommended)
 }
