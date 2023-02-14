@@ -32,6 +32,4 @@ int main() {
     int b = 9;
     int sum = a + b;
     printf("%d\n", sum);
-
-
 }
