@@ -64,6 +64,78 @@ int main() {
    printf("Exact value of c is : %d\n", c );
    printf("Exact value of d is : %d\n", d );
 
+// SWITCH STATEMENT
+    char grade = 'B';
+
+   switch(grade) {
+      case 'A' :
+         printf("Excellent!\n" );
+         break;
+      case 'B' :
+      case 'C' :
+         printf("Well done\n" );
+         break;
+      case 'D' :
+         printf("You passed\n" );
+         break;
+      case 'F' :
+         printf("Better try again\n" );
+         break;
+      default :
+         printf("Invalid grade\n" );
+   }
+   printf("Your grade is  %c\n", grade );
+
+// NESTED SWITCH STATEMENT
+    int x = 234;
+    int y = 345;
+ 
+   switch(x) {
+   
+      case 234: 
+         printf("This is part of outer switch\n", x );
+      
+         switch(y) {
+            case 345:
+               printf("This is part of inner switch\n", x );
+         }
+   }  
+   printf("Exact value of a is : %d\n", x );
+   printf("Exact value of b is : %d\n", y );
+   
+// BREAK - CONTROL STATEMENT
+    int m;
+
+    for (m = 0; m < 10; m++) {
+    if (m == 4) {
+    break;
+  }
+  printf("%d\n", m);
+}
+
+// CONTINUE - CONTROL STATEMENT
+    int n;
+
+    for (n = 0; n < 10; n++) {
+    if (n == 4) {
+    continue;
+  }
+  printf("%d\n", n);
+}
+
+// DEFAULT - This specifies some code to run when there is no case.
+int day = 4;
+
+switch (day) {
+  case 6:
+    printf("Today is Saturday");
+    break;
+  case 7:
+    printf("Today is Sunday");
+    break;
+  default:
+    printf("Looking forward to the Weekend");
+}
 
    return 0;
 }
